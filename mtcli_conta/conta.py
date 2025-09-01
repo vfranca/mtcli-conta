@@ -1,3 +1,5 @@
+"""Exibe informações da conta conectada no MetaTrader 5."""
+
 import click
 import MetaTrader5 as mt5
 from mtcli.conecta import conectar, shutdown
@@ -14,7 +16,9 @@ def conta():
 
     info = mt5.account_info()
     if info is None:
-        click.echo("❌ Não foi possível obter informações da conta.")
+        msg = "❌ Não foi possível obter informações da conta"
+        click.echo(msg)
+        log.error(msg)
         shutdown()
         return
 

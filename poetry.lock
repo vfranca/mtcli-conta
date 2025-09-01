@@ -211,6 +211,22 @@ files = [
 ]
 
 [[package]]
+name = "isort"
+version = "6.0.1"
+description = "A Python utility / library to sort Python imports."
+optional = false
+python-versions = ">=3.9.0"
+groups = ["dev"]
+files = [
+    {file = "isort-6.0.1-py3-none-any.whl", hash = "sha256:2dc5d7f65c9678d94c88dfc29161a320eec67328bc97aad576874cb4be1e9615"},
+    {file = "isort-6.0.1.tar.gz", hash = "sha256:1cb5df28dfbc742e490c5e41bad6da41b805b0a8be7bc93cd0fb2a8a890ac450"},
+]
+
+[package.extras]
+colors = ["colorama"]
+plugins = ["setuptools"]
+
+[[package]]
 name = "metatrader5"
 version = "5.0.5200"
 description = "API Connector to MetaTrader 5 Terminal"
@@ -608,4 +624,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.10,<3.14.0"
-content-hash = "fb21c8e21fcb1a2621e713d169905b30e89c43e02b0cfcf52796d92f078405f5"
+content-hash = "7241bc718d6dfa8e0fa60bfffa24393393c601a6fa7a4c686b4f61d87870dd9a"
