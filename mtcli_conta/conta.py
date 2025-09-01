@@ -3,10 +3,11 @@ import MetaTrader5 as mt5
 from mtcli.conecta import conectar, shutdown
 from mtcli.logger import setup_logger
 
-logger = setup_logger("conta")
+log = setup_logger()
 
 
 @click.command()
+@click.version_option(package_name="mtcli-conta")
 def conta():
     """Exibe informações da conta conectada no MetaTrader 5."""
     conectar()
