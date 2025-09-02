@@ -28,7 +28,7 @@ def conta():
     click.echo(f"Servidor: {info.server}")
     click.echo(f"Moeda: {info.currency}")
     click.echo(f"Saldo: {info.balance}")
-    click.echo(f"Equidade: {info.equity}")
+    click.echo(f"Patrimonio: {info.equity}")
     click.echo(f"Margem Livre: {info.margin_free}")
     click.echo(f"Margem Usada: {info.margin}")
     click.echo(f"Nível de Margem: {info.margin_level:.2f}%")
