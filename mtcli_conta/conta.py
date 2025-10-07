@@ -8,7 +8,7 @@ from mtcli.logger import setup_logger
 log = setup_logger()
 
 
-@click.command()
+@click.command("conta", help="Mostra informações da conta MetaTrader conectada (saldo, margem, etc.).")
 @click.version_option(package_name="mtcli-conta")
 def conta():
     """Exibe informações da conta conectada no MetaTrader 5."""
